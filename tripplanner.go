@@ -11,59 +11,6 @@ import (
 "io/ioutil"
 )
 
-//type (
-  /*Startresults struct {
-    Results []AddressComponents `json:"results" bson:"results"`
-    Status string `json:"status" bson:"status"`
-  }
-
-  AddressComponents struct {
-    Addcompo []Lnsn `json:"address_components bson:"address_components"`
-    Formadd string `json:"formatted_address" bson:"formatted_address"`
-    Geometry []Geo `json:"geometry" bson:"geometry"`
-    Place_id string `json:"place_id" bson:"place_id"`
-    Types []string `json:"types" bson:"types"`
-  }
-  Lnsn struct {
-    Long_name string `json:"long_name" bson:"long_name"`
-    Short_name string `json:"short_name" bson:"short_name"`
-    Types []string `json:"types bson :"types"`
-
-  }
-  Geo struct {
-    Locate []Lat `json:"location" bson:"location"`
-    Location_type string `json:"location_type" bson:"location_type"`
-    Viewport []Vp `json:"viewport" bson:"viewport"`
-  }
-
-  Lat struct {
-    Lateral float64 `json:"lat" bson:"lat"`
-    Longitude float64 `json:"lng" bson:"lng"`
-  }
-
-  Vp struct {
-    Northeast []Ne `json:"northeast" bson:"northeast"`
-    Southwest []Sw `json:"southwest" bson:"southwest"`
-  }
-
-  Ne struct {
-    Ne_lat float64 `json:"lat" bson:"lat"`
-    Ne_lng float64 `json:"lng" bson:"lng"`
-  }
-
-  Sw struct {
-    Sw_lat float64 `json:"lat" bson:"lat"`
-    Sw_lng float64 `json:"lng" bson:"lng"`
-
-  }
-
-*/
-/*
-    cord struct {
-      Lat string `json:"lat" bson:"lat"`
-      Long string `json:"lng" bson:"lng"`
-    }
-*/
 
 type Startresults struct {
 	Results []struct {
@@ -299,10 +246,10 @@ func fetchdata (rep *postresp) postresp {
 
 
 func getSession() *mgo.Session {
-//    s, err := mgo.Dial("mongodb://localhost:27017")
 
     // Connect to the mongo deployment
-		s, err := mgo.Dial("mongodb://admin:admin@ds043714.mongolab.com:43714/tripplanner")
+    s, err := mgo.Dial("mongodb://localhost:27017")
+
 
     // Check if connection error, is mongo running?
     if err != nil {
@@ -327,7 +274,3 @@ func main() {
 
 }
 
-
-
-/*****curl -XPOST -H 'Content-Type: application/json' -d '{"name": "Bob Smith", "address": "123 main street", "city" : "San Jose", "state" : "CA", "zip": "95112"}' http://localhost:3022/locations
-*/
