@@ -1,16 +1,6 @@
 # CMPE273-Assignment2
 # Simple location & trip planner service in Go
 
-```css
-
-<font color="red">This is some text!</font>
-```
-
-
-```html
-<p style='color:red'>This is some red text.</p>
-```
-
 This location service has various REST endpoints to store & retrieve locations. All the CRUD operations are performed and MongoDB has been used for data persistence.
 
 ## Features   
