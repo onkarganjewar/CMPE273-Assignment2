@@ -67,7 +67,7 @@ go run tripplanner.go
 
 While the connection is running open the REST Console and do any of the following CRUD operations like
 
-###POST - To create a new location
+####POST - To create a new location
 
 ##### Request 
 
@@ -107,7 +107,7 @@ HTTP Response Code: 201
 ```
 
 
-###GET - To retrieve a stored location
+####GET - To retrieve a stored location
 
 ##### Request 
 
@@ -137,7 +137,7 @@ HTTP Response Code: 200
 ```
 
 
-###PUT - To update an existing location
+####PUT - To update an existing location
 
 ##### Request 
 
@@ -166,7 +166,7 @@ HTTP Response Code: 202
 }
 ```
 
-###DELETE - To delete a location
+####DELETE - To delete a location
 
 ##### Request 
 
