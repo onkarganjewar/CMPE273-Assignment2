@@ -71,7 +71,7 @@ While the connection is established and running, open the REST Console and do an
 
 ##### Request 
 
-```prolog
+```http
 POST /locations
 ```
 
@@ -111,7 +111,7 @@ HTTP Response Code: 201
 
 ##### Request 
 
-```prolog
+```http
 GET /locations/564e7f130a956e266887fc85
 ```
 
@@ -141,7 +141,7 @@ HTTP Response Code: 200
 
 ##### Request 
 
-```prolog
+```http
 PUT /locations/564e7f130a956e266887fc85
 ```
 
@@ -170,7 +170,7 @@ HTTP Response Code: 202
 
 ##### Request 
 
-```prolog
+```http
 DELETE /locations/564e7f130a956e266887fc85
 ```
 
