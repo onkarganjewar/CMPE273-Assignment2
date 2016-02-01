@@ -65,7 +65,7 @@ Go to your workspace where the application is stored and start the application
 go run tripplanner.go
 ```
 
-While the connection is running open the REST Console and do any of the following CRUD operations like
+While the connection is established and running, open the REST Console and do any of the following CRUD operations such as
 
 ####POST - To create a new location
 
