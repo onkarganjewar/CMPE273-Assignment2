@@ -4,25 +4,25 @@ This RESTful Web Service has several endpoints to store & retrieve locations. Im
 
 ## Features   
 
-•	Create a new location  
+* Create a new location  
 
 ```http
 POST   /locations
 ```
 
-•	Retrieve a stored location 
+* Retrieve a stored location 
 
 ```http
 GET  /locations/{location_id}    
 ```
 
-•	Update an existing location 
+* Update an existing location 
 
 ```http
 PUT /locations/{location_id}   
 ```
 
-•	Delete a location 
+* Delete a location 
 
 ```http
 DELETE /locations/{location_id}   
@@ -65,7 +65,7 @@ go get gopkg.in/mgo.v2/bson
 
 ### Deploying MongoDB
 
-• All the instructions and relevant files for installing MongoDB can be found [here.](https://docs.mongodb.org/manual/installation/)  
+• All the instructions for installing MongoDB can be found [here.](https://docs.mongodb.org/manual/installation/)  
 
 • You will also need to create a collection, and connect to that MongoDB deployment using a standard connection URI like this:
  
