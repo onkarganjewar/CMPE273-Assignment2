@@ -4,25 +4,25 @@ This RESTful Web Service has several endpoints to store & retrieve locations. Im
 
 ## Features   
 
-•	Create a new location:  
+•	Create a new location  
 
 ```http
 POST   /locations
 ```
 
-•	Retrieve a stored location: 
+•	Retrieve a stored location 
 
 ```http
 GET  /locations/{location_id}    
 ```
 
-•	Update an existing location: 
+•	Update an existing location 
 
 ```http
 PUT /locations/{location_id}   
 ```
 
-•	Delete a location: 
+•	Delete a location 
 
 ```http
 DELETE /locations/{location_id}   
@@ -65,9 +65,9 @@ go get gopkg.in/mgo.v2/bson
 
 ### Deploying MongoDB
 
-• All the instructions and relevant files for installing MongoDB can be found [here](https://docs.mongodb.org/manual/installation/)  
+• All the instructions and relevant files for installing MongoDB can be found [here.](https://docs.mongodb.org/manual/installation/)  
 
-• You will also need to create a collection, and connect to that MongoDB deployment using a standard connection URI like this
+• You will also need to create a collection, and connect to that MongoDB deployment using a standard connection URI like this:
  
  ```Shell
  mongodb://<dbuser>:<dbpassword>@ds012345.mongolab.com:12345/<dbname>
@@ -83,7 +83,7 @@ go get gopkg.in/mgo.v2/bson
 
 * Application will now run at http://localhost:3022/
 
-* Use any [REST client console](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn) or [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) chrome extensions to test the following RESTful Web Services:
+* Use any [REST client console](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn) or [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) chrome extensions to test the following endpoints:
 
 
 ### POST - Create a new location
